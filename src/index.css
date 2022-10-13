@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: din-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +13,170 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Minter {
+  max-width: 940px;
+  max-height: 100%;
+  
+  margin: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  font-size: 16px;
+  width: 100%;
+  border-color: rgba(4, 4, 5, 0.1);
+  line-height: 32px;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgba(4, 4, 5, 0.4);
+}
+
+button {
+  padding: 9px 16px;
+  max-height: 40px;
+  border-color: #254cdd;
+  color: #254cdd;
+  background-color: white;
+  border-radius: 8px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+#title {
+  padding-top: 32px;
+}
+
+#status {
+  color:red;
+}
+
+.uploadFile {
+  border: 4px dashed rgba(4, 4, 5, 0.1);
+  border-radius: 16px;
+  text-align: center;
+  padding: 32px 60px;
+}
+
+#walletButton {
+  text-align: right;
+
+  margin-bottom: 50px;
+  line-height: 16px;
+}
+
+#mintButton {
+  margin-top: 40px;
+  background-color: #254cdd;
+  color:white;
+}
+
+.button-container{
+
+    margin-bottom: 100px;
+}
+.redirect-section{
+  margin-bottom: 0 !important;
+}
+div#status {
+  max-width: 500px;
+}
+.button-container {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+button#walletButton {
+  margin-top: 30px !important;
+  border-color: #db0019;
+  color: #000000;
+  background-color: #db0019;
+  border-radius: 0;
+  padding: 16px 40px;
+  padding-bottom: 16px !important;
+  display: block;
+  height: auto !important;
+  display: flex;
+  max-height: none !important;
+  max-width: none !important;
+  text-transform: uppercase;
+}
+#walletButton {
+  margin-top: 30px !important;
+  margin-top: 30px !important;
+  text-decoration: none !important;
+  max-height: 40px;
+  border-radius: 8px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 9px 16px;
+  background-color: transparent;
+  border: 1px solid;  
+}
+
+#walletButton {
+  margin-top: 30px !important;
+  border-color: #db0019;
+  color: #000000;
+  background-color: #db0019;
+  border-radius: 0;
+  padding: 16px 40px;
+  padding-bottom: 16px !important;
+  display: block;
+  height: auto !important;
+  display: flex;
+  max-height: none !important;
+  max-width: none !important;
+  text-transform: uppercase;
+  font-family: BudBold, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+button#walletButton{
+  font-family: nunito-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  display: block;
+  padding: 16px 36px;
+  border-radius: 20px;
+  background-color: #db0019;
+  border-color: #db0019;
+  font-family: BudBold, sans-serif;
+  color: #fff;
+  font-size: 22px;
+  
+  cursor: pointer;
+  margin-top: 0 !important;
+}
+
+button#walletButton:hover{
+  filter: brightness(120%);
+
 }
