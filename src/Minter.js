@@ -317,42 +317,21 @@ const Minter = (props) => {
       const nfts = await web3.alchemy.getNfts({owner: address, contractAddresses: ["0xde747bb0a3d351c243073b56e117b7b5605913f8"]});
       for(const nft of nfts.ownedNfts){
         console.log("URI: " + JSON.stringify(nft.tokenUri.gateway));
-        // fetch("https://vbfq.s3.amazonaws.com/metadata/7", {
-        //     method: "GET",
-        //     headers: { 'Content-Type': 'application/json',}
-        //   })
-        //     .then((response) => response.json())
-        //     .then((data) => {
-        //         console.log("Res: "+JSON.stringify(data));
-        //         // Handle data
-        //         //this.props.buttonFunction();
-        //     })
-        //     .catch((err) => {
-        //         //console.log(err.message);
-        //         console.log("ERROR! "+ JSON.stringify(err.message));
-                
-        //     });
-
-        fetch('https://qvgep2eaik.execute-api.us-east-1.amazonaws.com/vbfq_set_physical_claim', {
-            method: 'POST',
-            body: JSON.stringify({
-                  "access_key" : "2b9e27bb2Ba1b4a31ad4E00d7a6bd59dF6500b546",
-                  "token_id" : 1   
-          })
-          
+        fetch("https://vbfq.s3.amazonaws.com/metadata/7", {
+            method: "GET",
+            headers: { 'Content-Type': 'application/json',}
           })
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
+                console.log("Res: "+JSON.stringify(data));
                 // Handle data
                 //this.props.buttonFunction();
             })
             .catch((err) => {
-                console.log(err.message);
-                console.log("ERROR!");
+                //console.log(err.message);
+                console.log("ERROR! "+ JSON.stringify(err.message));
                 
             });
-
         let tokenName = nft;
         console.log("This NFT: ++ " + JSON.stringify(nft));
         
